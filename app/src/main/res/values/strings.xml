@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Cadence</string>
+    <string name="nav_schedule">Schedule</string>
+    <string name="nav_search">Search</string>
+    <string name="nav_vault">Vault</string>
+    <string name="cd_create_event">Create event</string>
+    <string name="cd_previous_month">Previous month</string>
+    <string name="cd_next_month">Next month</string>
+    <string name="cd_toggle_theme">Toggle color theme</string>
+    <string name="cd_jump_today">Jump to today</string>
+    <string name="cd_clear_search">Clear search query</string>
+    <string name="cd_empty_schedule">No events scheduled for this day</string>
+    <string name="cd_encrypted_badge">End-to-end encrypted storage</string>
+    <string name="cd_close_dialog">Close</string>
+    <string name="cd_delete_event">Delete event</string>
+    <string name="cd_edit_event">Edit event</string>
+    <string name="notification_channel_name">Event Reminders</string>
+    <string name="notification_channel_desc">Alerts before your scheduled calendar events begin</string>
+</resources>

@@ -1,0 +1,6 @@
+{
+  "name": "Cadence",
+  "description": "Minimalist offline-first calendar with Google Calendar sync, customizable reminders, natural language search, and encrypted local storage.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
