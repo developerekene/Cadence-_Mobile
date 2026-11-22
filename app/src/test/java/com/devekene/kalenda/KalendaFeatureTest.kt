@@ -1,6 +1,8 @@
 package com.devekene.kalenda
 
+import android.Manifest
 import android.content.Context
+import androidx.core.app.ActivityCompat
 import androidx.room.Room
 import androidx.test.core.app.ApplicationProvider
 import com.devekene.kalenda.data.local.AppDatabase
@@ -26,6 +28,7 @@ import org.junit.Assert.assertTrue
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
+import org.robolectric.Robolectric
 import org.robolectric.RobolectricTestRunner
 import org.robolectric.annotation.Config
 
@@ -266,5 +269,15 @@ class KalendaFeatureTest {
         assertEquals(14, DateTimeUtils.hourOf(newStart))
         assertEquals(15, DateTimeUtils.minuteOf(newStart))
         assertEquals(90, DateTimeUtils.durationMinutes(newStart, newEnd))
+    }
+
+    @Test
+    fun `fragment activity accepts 32-bit ActivityResultRegistry permission request codes`() {
+        val activity = Robolectric.buildActivity(MainActivity::class.java).create().get()
+        ActivityCompat.requestPermissions(
+            activity,
+            arrayOf(Manifest.permission.POST_NOTIFICATIONS),
+            0x00010000
+        )
     }
 }
