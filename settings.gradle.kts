@@ -22,6 +22,6 @@ dependencyResolutionManagement {
   }
 }
 
-rootProject.name = "Cadence"
+rootProject.name = "Kalenda"
 
 include(":app")

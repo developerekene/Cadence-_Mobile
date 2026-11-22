@@ -3,6 +3,6 @@
     <item
         android:width="66dp"
         android:height="66dp"
-        android:drawable="@drawable/img_cadence_icon"
+        android:drawable="@drawable/img_kalenda_icon"
         android:gravity="center" />
 </layer-list>
